@@ -1,4 +1,4 @@
-Get-Combination using PowerShell Classes and Script
+Get-Combination using PowerShell Classes and Script to generate and manipulate combinations
 -
 A combination is a way of selecting to members from a grouping, such that (unlike permutations) the order of selection does not matter.
 
