@@ -19,9 +19,8 @@ then the 10 possible combinations of size 3 are
 	bug   dog   elk  
 	cat   dog   elk  
 
-
+![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/Combinations.png)
 
 Acknowledgments
 -
 I ported this from James McCaffrey's book [".NET Test Automation Recipes"](http://www.apress.com/9781590596630)
-![image]()
