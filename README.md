@@ -23,4 +23,4 @@ then the 10 possible combinations of size 3 are
 
 Acknowledgments
 -
-I ported this from James McCaffrey's book [".NET Test Automation Recipes"](http://www.apress.com/9781590596630)
+I ported this from James McCaffrey's book [.NET Test Automation Recipes](http://www.apress.com/9781590596630)
