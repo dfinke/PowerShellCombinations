@@ -93,8 +93,6 @@
     [string]ToString() { return "% "+ $this.data + " %" }    
 }
 
-cls
-
 function Get-Permutation {
     param(
         [Parameter(Mandatory=$true)]
