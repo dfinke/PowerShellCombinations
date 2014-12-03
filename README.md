@@ -40,7 +40,7 @@ then, the six permutations of these items are
 	Jane Adam John
 	Jane John Adam
 
-![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/Combinations.png)
+![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/Permutations.png)
 
 Acknowledgments
 -
