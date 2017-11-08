@@ -94,6 +94,14 @@
 }
 
 function Get-Permutation {
+<#
+.EXAMPLE 
+#
+$people = echo Adam John Jane
+Get-Permutation $people
+#>
+    [OutputType("Object[]")]
+    [CmdletBinding()]
     param(
         [Parameter(Mandatory=$true)]
         $target
@@ -107,5 +115,4 @@ function Get-Permutation {
     }
 }
 
-$people = echo Adam John Jane
-Get-Permutation $people
+Export-ModuleMember -Function "Get-Permutation"

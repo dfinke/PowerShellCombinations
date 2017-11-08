@@ -138,6 +138,14 @@ class Combination {
 }
 
 function Get-Combination {
+<#
+.EXAMPLE 
+#
+$animals = echo ant bug cat dog elk
+Get-Combination $animals 3 | Format-Table -AutoSize
+#>
+    [OutputType("Object[]")]
+    [CmdletBinding()]
     param(        
         [string[]]$Data,
         [int]$TakeXAtAtime
@@ -157,5 +165,5 @@ function Get-Combination {
     }    
 }
 
-$animals = echo ant bug cat dog elk
-Get-Combination $animals 3 | Format-Table -AutoSize
+Export-ModuleMember -Function "Get-Combination"
+
