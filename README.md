@@ -70,7 +70,7 @@ Here we simulate a deck of cards with string array with 4 values (each suit of t
 
 ### In Action
 
-![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/DealHand.png)
+![image](https://raw.githubusercontent.com/lesterw1/PowerShellCombinations/master/images/DealHand.png)
 
 
 Acknowledgments
