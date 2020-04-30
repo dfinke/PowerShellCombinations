@@ -148,21 +148,30 @@ Get-Combination $animals 3 | Format-Table -AutoSize
     [CmdletBinding()]
     param(        
         [string[]]$Data,
-        [int]$TakeXAtAtime
+        [int]$TakeXAtAtime = 0
     )
 
-    $c = [Combination]::new($data.count, $TakeXAtAtime)
-    while ($c) {
-            
-        $h=[ordered]@{}
-        $idx=1
-        $c.ApplyTo($data) | % {
-            $h."Item$($idx)"=$_
-            ++$idx
-        }
-        [PSCustomObject]$h
-        $c=$c.Successor() 
-    }    
+	# Allow variable width combinations
+	if ($TakeXAtAtime -eq 0)
+		{ $TakeAtLeast = 1 ; $TakeAtMost = $Data.Count }
+	else
+		{ $TakeAtLeast = $TakeAtMost = $TakeXAtAtime }
+	
+	for ($i = $TakeAtMost; $i -ge $TakeAtLeast; $i--)
+	{
+		$c = [Combination]::new($data.count, $i)
+		while ($c) {
+				
+			$h=[ordered]@{}
+			$idx=1
+			$c.ApplyTo($data) | % {
+				$h."Item$($idx)"=$_
+				++$idx
+			}
+			[PSCustomObject]$h
+			$c=$c.Successor() 
+		}
+	}
 }
 
 Export-ModuleMember -Function "Get-Combination"

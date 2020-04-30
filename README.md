@@ -25,7 +25,11 @@ then the 10 possible combinations of size 3 are
 
 ![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/Combinations.png)
 
-Permuations
+and there are 35 combinations where the size is variable:
+
+![image](https://github.com/lesterw1/PowerShellCombinations/blob/master/images/CombinationsVariable.PNG?raw=true)
+
+Permutations
 -
 It you have the three items
 
