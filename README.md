@@ -23,7 +23,7 @@ then the 10 possible combinations of size 3 are
 	bug   dog   elk  
 	cat   dog   elk  
 
-![image](https://raw.githubusercontent.com/dfinke/PowerShellCombinations/master/images/Combinations.png)
+![image](https://github.com/lesterw1/PowerShellCombinations/blob/master/images/CombinationsVariable.PNG?raw=true)
 
 and there are 35 combinations where the size is variable:
 
